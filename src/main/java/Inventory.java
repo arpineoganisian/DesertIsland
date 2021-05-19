@@ -25,7 +25,7 @@ public class Inventory {
             System.out.println("  Nothing's here");
         }
         else {
-        System.out.print("| ");
+        System.out.print("  | ");
             for (Item i : items) {
                 System.out.print(i.getName() + " | ");
             }

@@ -16,7 +16,7 @@ public class Player {
 
     public void lookAround() {
         System.out.print("~ Current location: " + location.getName() + "\n  "
-                + location.getDesctiption() + "\n~ At this location: \n  ");
+                + location.getDesctiption() + "\n~ At this location: \n");
         location.getInventory().show();
     }
 
@@ -40,7 +40,7 @@ public class Player {
         this.location = optional.orElse(this.location);
 
         if (optional.isPresent()) { lookAround(); }
-        else { System.out.println("В этом направлении ничего нет, го в другую сторону"); }
+        else { System.out.println("There is nothing in this direction. Go in the other one"); }
     }
 
     public void pickUp(String string) {
@@ -70,6 +70,13 @@ public class Player {
                 break;
             }
         }
+        for (Item i:getInventory().getItems()) {
+            if(i.getName().toLowerCase().equals(string)) {
+                System.out.println(i.getDescription());
+                break;
+            }
+        }
+        System.out.println("There is no such item in " + name + "'s inventory or at the current location" );
     }
 
     public Inventory getInventory() {
@@ -78,6 +85,14 @@ public class Player {
 
     public void setHealth(int healthChange) {
         this.health = this.health - healthChange;
+        if (health > 0) {
+            System.out.println("~ " + this.name + "'s health:\n  " + this.health);
+        }
+        if (health <= 0) {
+            System.out.println("~ " + this.name + "'s health:\n  0");
+            System.out.println("OOPS! " + this.name + "is dead :(");
+            System.exit(0);
+        }
     }
 
     public String getName() {
