@@ -14,9 +14,9 @@ public class Location {
         this.directions = new HashMap<>();
     }
 
-    public String getDesctiption() {
-        return desctiption;
-    }
+    public String getName() { return name; }
+    public Inventory getInventory() { return inventory; }
+    public String getDesctiption() { return desctiption; }
 
     public void setDirections(Location loc, Direction dir) {
         directions.put(dir, loc);
@@ -28,22 +28,6 @@ public class Location {
         return directions.getOrDefault(direction, null);
     }
 
-    public void putOn(Item item){
-        inventory.add(item);
-    }
-    public void pickUp(Item item) {
-        inventory.remove(item);
-    }
-
-    //     public Location findNext(String str) {
-//        return null;
-//    }
-//
-    public String getName() {
-        return name;
-    }
-
-    public Inventory getInventory() {
-        return inventory;
-    }
+    public void putOn(Item item) { inventory.add(item); }
+    public void pickUp(Item item) { inventory.remove(item); }
 }

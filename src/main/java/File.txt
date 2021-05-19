@@ -7,6 +7,13 @@
  pick up [item name]             --> поместить предмет в свой инвентарь
  drop off [item name]            --> убрать предмет из своего инвентаря
  info [item name]                --> описание предмета
+ use [item name]                 --> использовать предмет
+ health                          --> текущее состояние игрока
  commands                        --> полный список команд
  exit                            --> выход из игры
  ----------------------------------------------------------------------
+
+ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+ Your cruise liner was shipwrecked...
+ You are on the beach in the middle of nowhere, desperately trying to find your way back home...
+ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
