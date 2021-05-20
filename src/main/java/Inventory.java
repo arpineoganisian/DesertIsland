@@ -22,7 +22,7 @@ public class Inventory {
 
     public void show() {
         if (items.isEmpty()) {
-            System.out.println("  Nothing's here");
+            System.out.println("  | Nothing's here |");
         }
         else {
         System.out.print("  | ");

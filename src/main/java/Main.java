@@ -5,45 +5,33 @@ import java.util.*;
 
 public class Main {
 
-    public static void showCommands() {
-        System.out.println(" ----------------------------------------------------------------------\n" +
-                "                               COMMANDS\n" +
-                " ----------------------------------------------------------------------\n" +
-                " look around                     --> осмотреться на местности\n" +
-                " go west / east / south / north  --> переместиться на другую локацию\n" +
-                " inventory                       --> список доступного инвенторя игрока\n" +
-                " pick up [item name]             --> поместить предмет в свой инвентарь\n" +
-                " drop off [item name]            --> убрать предмет из своего инвентаря\n" +
-                " info [item name]                --> описание предмета\n" +
-                " use [item name]                 --> использовать предмет\n" +
-                " health                          --> текущее состояние игрока\n" +
-                " commands                        --> полный список команд\n" +
-                " exit                            --> выход из игры\n" +
-                " ----------------------------------------------------------------------");
-    }
 
     public static void main(String[] args) throws IOException {
 
         //приветственное сообщение
-        System.out.println("\n ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n" +
-                " Your cruise liner was shipwrecked...\n" +
-                " You are alone on the beach in the middle of nowhere, desperately trying to find your way back home...\n" +
-                " ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n");
+        System.out.println("\n ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~\n" +
+                "   Your cruise liner was shipwrecked...\n" +
+                "   You are on the beach in the middle of nowhere, desperately trying to find your way back home...\n" +
+                " ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~\n");
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         //инициализация предметов
         CellPhone item1 = new CellPhone("Phone", "Watch the charge level...", Moveable.MOBILE, 30);
-        Item item2 = new Item("Wilson", "Beach volleyball, nice dude", Moveable.MOBILE, 10);
-        Item item3 = new Item("Coconut", "Need something to crack it", Moveable.MOBILE, 0);
-        Item item4 = new Item("Shipwreck", "I wish I could build a new one...", Moveable.STATIONARY, 0);
-        Item item5 = new Item("Mint", "So aromatic, but tastes not good", Moveable.STATIONARY, 0);
-        Item item6 = new Item("Lime", "Ripe and sore... And what am I supposed to do with it?", Moveable.STATIONARY, -5);
-        Item item7 = new Item("Banana leaf", "Looks like something that I can use for constructing a hut. As a roof. But I need foundation though.", Moveable.MOBILE, 0);
-        Item item8 = new Item("Source of freshwater", "Thank God! I will not die of thirst", Moveable.STATIONARY, 10);
-        Item item9 = new Item("Stone", "Thank God! I will not die of thirst", Moveable.STATIONARY, 10);
-        Item item10 = new Item("Fishes", "A shoal of fish. But I can't catch one with my bare hands", Moveable.STATIONARY, 0);
-        Item item11 = new Item("Sticks", "Those cane be useful", Moveable.MOBILE, 0);
+        Item item2 = new UsableItem("Wilson", "Beach volleyball, nice dude", Moveable.MOBILE,
+                10, "It's nice to finally talk to someone");
+        Item item3 = new Item("Coconut", "Need something to crack it", Moveable.MOBILE);
+        Item item4 = new Item("Shipwreck", "I wish I could build a new one...", Moveable.STATIONARY);
+        Item item5 = new Item("Mint", "So aromatic, but tastes not good", Moveable.MOBILE);
+        Item item6 = new UsableItem("Lime", "Ripe and sore... And what am I supposed to do with it?", Moveable.MOBILE,
+                -5, ".");
+        Item item7 = new Item("Banana leaf", "Looks like something that I can use for constructing a hut. As a roof. But I need foundation though.", Moveable.MOBILE);
+        Item item8 = new UsableItem("Source of freshwater", "Thank God! I will not die of thirst", Moveable.STATIONARY,
+                10, ".");
+        Item item9 = new UsableItem("Stone", "Thank God! I will not die of thirst", Moveable.STATIONARY,
+                10, ".");
+        Item item10 = new Item("Fishes", "A shoal of fish. But I can't catch one with my bare hands", Moveable.STATIONARY);
+        Item item11 = new Item("Sticks", "Those cane be useful", Moveable.MOBILE);
 
 
         // инициализация локаций
@@ -82,7 +70,7 @@ public class Main {
         location5.setDirections(location1, Direction.SOUTH);
         location1.setDirections(location5, Direction.NORTH);
 
-        showCommands();
+        Game.showCommands();
 
         while (true) {
             System.out.print(" --> ");
@@ -109,20 +97,18 @@ public class Main {
             else if (message.length() >= 3 && message.substring(0,3).compareTo("use") == 0) {
                 player.useItem(message.substring(3).replaceAll("^\\s+", ""), item1);
             }
+            else if(message.length() >= 6 && message.compareTo("health") == 0)  {
+                System.out.println("~ " + player.getName() + "'s health:\n  " + player.getHealth() + "%");
+            }
             else if (message.length() >= 8 && message.compareTo("commands") == 0) {
-                showCommands();
+                Game.showCommands();
             }
             else if(message.length() >= 4 && message.compareTo("exit") == 0)  {
                 System.exit(0);
             }
-            else if(message.length() >= 6 && message.compareTo("health") == 0)  {
-                System.out.println("~ " + player.getName() + "'s health:\n  " + player.getHealth());
-            }
             else {
                 System.out.println("There is no such command");
             }
-
-
         }
 
     }

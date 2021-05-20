@@ -1,1 +1,1 @@
-Text-based adventure game project written in Java
+Text-based adventure game written in Java

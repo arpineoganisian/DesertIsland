@@ -4,4 +4,8 @@ public class Combo {
     Item result;
     String message;
 
+    public Combo() {
+    }
+
+    public Item
 }
