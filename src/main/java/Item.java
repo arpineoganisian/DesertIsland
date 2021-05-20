@@ -16,7 +16,7 @@ public class Item {
 
     public void use(Player player, Location location) {
         System.out.println("Doesn't make any sense. What am I supposed to do with this?\n" +
-                    "Nothing has changed");
+                    "Nothing has changed, try another item.");
     }
 
 }

@@ -18,9 +18,10 @@ public class CellPhone extends Item {
             System.out.println("Your phone's dead. Charge level: 0%");
             return;
         }
-        if (location.getName().equals("Mountains")) {
+        if (location.getName().equals("Mountain")) {
             System.out.println("You did it!\n" +
                     "Rescue services have traced your signal. They are already on their way!");
+            System.exit(0);
         }
         else {
             System.out.println("No signal");

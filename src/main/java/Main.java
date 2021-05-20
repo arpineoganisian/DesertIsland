@@ -18,16 +18,17 @@ public class Main {
                 5, "It's nice to finally talk to someone");
         Item item3 = new Item("Coconut", "Need something to crack it", Moveable.MOBILE);
         Item item4 = new Item("Shipwreck", "I wish I could build a new one...", Moveable.STATIONARY);
-        Item item5 = new Item("Mint", "So aromatic, but tastes not good", Moveable.MOBILE);
-        Item item6 = new UsableItem("Lime", "Ripe and sore... And what am I supposed to do with it?", Moveable.MOBILE,
+        Item item5 = new UsableItem("Mint", "So aromatic", Moveable.MOBILE,
+                -5, "Tastes disgusting!");
+        Item item6 = new UsableItem("Lime", "Ripe and sore... Should I eat it?", Moveable.MOBILE,
                 -5, "Now I'm even more thirsty!");
         Item item7 = new Item("Leaf", "Banana leaf looks like something that I can use for constructing a hut. As a roof. But I need foundation though.", Moveable.MOBILE);
         Item item8 = new UsableItem("Source of freshwater", "Thank God! I will not die of thirst", Moveable.STATIONARY,
                 5, "Water is life");
-        Item item9 = new Item("Stone", "Thank God! I will not die of thirst", Moveable.MOBILE);
+        Item item9 = new Item("Stone", "This can be useful", Moveable.MOBILE);
         Item item10 = new UsableItem("Fish", "A shoal of fish. But I can't catch one with my bare hands", Moveable.STATIONARY,
                 -10, "Ouch! I got bit");
-        Item item11 = new Item("Stick", "Those cane be useful", Moveable.MOBILE);
+        Item item11 = new Item("Stick", "Those can be useful", Moveable.MOBILE);
 
         // инициализация предметов-результатов комбо
         Item item12 = new UsableItem("Coconut meat", "Calories: 283, protein: 3 grams, carbs: 10 grams, Fat: 27 grams.", Moveable.MOBILE,
@@ -50,7 +51,7 @@ public class Main {
         Combo combo7 = new Combo(item7, item4, item14);
         Combo combo8 = new Combo(item11, item10, item15);
 
-        List<Combo> comboList1 = new ArrayList<>(List.of(combo1, combo2, combo3, combo4));
+        List<Combo> comboList1 = new ArrayList<>(List.of(combo1, combo2, combo3, combo4, combo5, combo6, combo7, combo8));
 
         // инициализация локаций
         Location location1 = new Location("Beach",
