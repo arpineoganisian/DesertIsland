@@ -1,4 +1,4 @@
-import java.util.Locale;
+import java.util.List;
 import java.util.Optional;
 
 public class Player {
@@ -48,7 +48,7 @@ public class Player {
     }
 
     public void pickUp(String string) {
-        Optional<Item> optional = Optional.ofNullable(Game.findItem(location.getInventory(), string));
+        Optional<Item> optional = Optional.ofNullable(GameUtils.findItem(location.getInventory(), string));
         if (optional.isPresent()) {
             Item item = optional.get();
             if (item.getMoveable() == Moveable.STATIONARY) {
@@ -66,7 +66,7 @@ public class Player {
     }
 
     public void dropOff(String string) {
-        Optional<Item> optional = Optional.ofNullable(Game.findItem(inventory, string));
+        Optional<Item> optional = Optional.ofNullable(GameUtils.findItem(inventory, string));
         if(optional.isPresent()) {
             Item item = optional.get();
             inventory.getItems().remove(item);
@@ -84,9 +84,9 @@ public class Player {
             System.out.println("Nope. Specify the item name first");
             return;
         }
-        Optional<Item> optional = Optional.ofNullable(Game.findItem(location.getInventory(), string));
+        Optional<Item> optional = Optional.ofNullable(GameUtils.findItem(location.getInventory(), string));
         if (optional.isEmpty()) {
-            optional = Optional.ofNullable(Game.findItem(inventory, string));
+            optional = Optional.ofNullable(GameUtils.findItem(inventory, string));
             if (optional.isEmpty()) {
                 System.out.println("There is no such item in " + name + "'s inventory or at the current location");
                 return;
@@ -107,19 +107,13 @@ public class Player {
             phone.use(this, this.location);
             return;
         }
-        Optional<Item> optional = Optional.ofNullable(Game.findItem(location.getInventory(), string));
+        Optional<Item> optional = Optional.ofNullable(GameUtils.findItem(location.getInventory(), string));
         if (optional.isPresent()) {
             Item item = optional.get();
-            if (item.getMoveable() == Moveable.STATIONARY) {
                 item.use(this, this.location);
-            }
-            else {
-                System.out.println("You have to put the item in your inventory before you can use it");
-                return;
-            }
         }
         else {
-            optional = Optional.ofNullable(Game.findItem(getInventory(), string));
+            optional = Optional.ofNullable(GameUtils.findItem(getInventory(), string));
             if (optional.isPresent()) {
                 Item item = optional.get();
                 item.use(this, this.location);
@@ -128,5 +122,8 @@ public class Player {
                 System.out.println("There is no such item in " + name + "'s inventory or at the current location");
             }
         }
+    }
+    public void makeCombo () {
+
     }
 }

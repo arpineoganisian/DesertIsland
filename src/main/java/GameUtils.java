@@ -1,4 +1,4 @@
-public class Game {
+public class GameUtils {
 
     public static void showCommands() {
         System.out.println(" -----------------------------------------------------------------------------\n" +
@@ -16,6 +16,13 @@ public class Game {
                 " commands                               --> полный список команд\n" +
                 " exit                                   --> выход из игры\n" +
                 " -----------------------------------------------------------------------------");
+    }
+
+    public static void showWelcomeMessage() {
+        System.out.println("\n ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~\n" +
+                "   Your cruise liner was shipwrecked...\n" +
+                "   You are on the beach in the middle of nowhere, desperately trying to find your way back home...\n" +
+                " ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~\n");
     }
 
     public static Item findItem(Inventory inventory, String string) {

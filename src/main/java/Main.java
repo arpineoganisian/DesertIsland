@@ -8,31 +8,43 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        //приветственное сообщение
-        System.out.println("\n ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~\n" +
-                "   Your cruise liner was shipwrecked...\n" +
-                "   You are on the beach in the middle of nowhere, desperately trying to find your way back home...\n" +
-                " ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~\n");
+        GameUtils.showWelcomeMessage();
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         //инициализация предметов
         CellPhone item1 = new CellPhone("Phone", "Watch the charge level...", Moveable.MOBILE, 30);
         Item item2 = new UsableItem("Wilson", "Beach volleyball, nice dude", Moveable.MOBILE,
-                10, "It's nice to finally talk to someone");
+                5, "It's nice to finally talk to someone");
         Item item3 = new Item("Coconut", "Need something to crack it", Moveable.MOBILE);
         Item item4 = new Item("Shipwreck", "I wish I could build a new one...", Moveable.STATIONARY);
         Item item5 = new Item("Mint", "So aromatic, but tastes not good", Moveable.MOBILE);
         Item item6 = new UsableItem("Lime", "Ripe and sore... And what am I supposed to do with it?", Moveable.MOBILE,
-                -5, ".");
-        Item item7 = new Item("Banana leaf", "Looks like something that I can use for constructing a hut. As a roof. But I need foundation though.", Moveable.MOBILE);
+                -5, "Now I'm even more thirsty!");
+        Item item7 = new Item("Leaf", "Banana leaf looks like something that I can use for constructing a hut. As a roof. But I need foundation though.", Moveable.MOBILE);
         Item item8 = new UsableItem("Source of freshwater", "Thank God! I will not die of thirst", Moveable.STATIONARY,
-                10, ".");
-        Item item9 = new UsableItem("Stone", "Thank God! I will not die of thirst", Moveable.STATIONARY,
-                10, ".");
-        Item item10 = new Item("Fishes", "A shoal of fish. But I can't catch one with my bare hands", Moveable.STATIONARY);
+                5, "Water is life");
+        Item item9 = new Item("Stone", "Thank God! I will not die of thirst", Moveable.MOBILE);
+        Item item10 = new UsableItem("Fish", "A shoal of fish. But I can't catch one with my bare hands", Moveable.STATIONARY,
+                -10, "Ouch! I got bit");
         Item item11 = new Item("Sticks", "Those cane be useful", Moveable.MOBILE);
 
+        // инициализация предметов-результатов комбо
+        Item item12 = new UsableItem("Coconut meat", "Calories: 283, protein: 3 grams, carbs: 10 grams, Fat: 27 grams.", Moveable.MOBILE,
+                10, "Really quite filling");
+        Item item13 = new UsableItem("Mojito virgin", "Let's grab a drink!", Moveable.MOBILE,
+                -5, "Rum is missing, I don't like it");
+        Item item14 = new UsableItem("Hut", "Finally, I'll get some sleep.", Moveable.STATIONARY,
+                -20, "The hut was poorly constructed and collapsed in the middle of my dream");
+        Item item15 = new UsableItem("Sushi", "I don't know if it's a good idea to eat raw fish, but I'm so hungry!", Moveable.MOBILE,
+                10, "Really quite filling");
+
+        Combo combo1 = new Combo(item3, item9, item12);
+        Combo combo2 = new Combo(item6, item5, item13 );
+        Combo combo3 = new Combo(item4, item7, item14);
+        Combo combo4 = new Combo(item10, item11, item15);
+
+        List<Combo> comboList1 = new ArrayList<>(List.of(combo1, combo2, combo3, combo4));
 
         // инициализация локаций
         Location location1 = new Location("Beach",
@@ -50,7 +62,7 @@ public class Main {
 
         // инициализация игрока
         System.out.print("Insert player name: ");
-        Player player = new Player(reader.readLine(), location1, 20);
+        Player player = new Player(reader.readLine(), location1, 10);
 
         // инициализация инвенторя у игрока и на локациях
         player.getInventory().add(item1);
@@ -70,7 +82,7 @@ public class Main {
         location5.setDirections(location1, Direction.SOUTH);
         location1.setDirections(location5, Direction.NORTH);
 
-        Game.showCommands();
+        GameUtils.showCommands();
 
         while (true) {
             System.out.print(" --> ");
@@ -97,11 +109,14 @@ public class Main {
             else if (message.length() >= 3 && message.substring(0,3).compareTo("use") == 0) {
                 player.useItem(message.substring(3).replaceAll("^\\s+", ""), item1);
             }
+            else if (message.length() >= 5 && message.substring(0,5).compareTo("combo") == 0) {
+                player.makeCombo(comboList1, message.substring(5).replaceAll("^\\s+", ""));
+            }
             else if(message.length() >= 6 && message.compareTo("health") == 0)  {
                 System.out.println("~ " + player.getName() + "'s health:\n  " + player.getHealth() + "%");
             }
             else if (message.length() >= 8 && message.compareTo("commands") == 0) {
-                Game.showCommands();
+                GameUtils.showCommands();
             }
             else if(message.length() >= 4 && message.compareTo("exit") == 0)  {
                 System.exit(0);
@@ -110,8 +125,5 @@ public class Main {
                 System.out.println("There is no such command");
             }
         }
-
     }
 }
-
-//создать еще одну строку для названий айтемов в родительном падеже?

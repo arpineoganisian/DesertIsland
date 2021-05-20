@@ -22,10 +22,10 @@ public class UsableItem extends Item{
         player.setHealth(player.getHealth() + this.effect);
         System.out.println(this.message);
         if (player.getHealth() > 0) {
-            System.out.println("~ " + player.getName() + "'s health:\n  " + player.getHealth());
+            System.out.println("~ " + player.getName() + "'s health:\n  " + player.getHealth() + "%");
         }
         if (player.getHealth() <= 0) {
-            System.out.println("~ " + player.getName() + "'s health:\n  0");
+            System.out.println("~ " + player.getName() + "'s health:\n  0%");
             System.out.println("OOPS! " + player.getName() + "is dead :(");
             System.exit(0);
         }
