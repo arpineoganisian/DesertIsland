@@ -27,7 +27,7 @@ public class Main {
         Item item9 = new Item("Stone", "Thank God! I will not die of thirst", Moveable.MOBILE);
         Item item10 = new UsableItem("Fish", "A shoal of fish. But I can't catch one with my bare hands", Moveable.STATIONARY,
                 -10, "Ouch! I got bit");
-        Item item11 = new Item("Sticks", "Those cane be useful", Moveable.MOBILE);
+        Item item11 = new Item("Stick", "Those cane be useful", Moveable.MOBILE);
 
         // инициализация предметов-результатов комбо
         Item item12 = new UsableItem("Coconut meat", "Calories: 283, protein: 3 grams, carbs: 10 grams, Fat: 27 grams.", Moveable.MOBILE,
@@ -39,26 +39,39 @@ public class Main {
         Item item15 = new UsableItem("Sushi", "I don't know if it's a good idea to eat raw fish, but I'm so hungry!", Moveable.MOBILE,
                 10, "Really quite filling");
 
+        // инициализация комбо для
         Combo combo1 = new Combo(item3, item9, item12);
         Combo combo2 = new Combo(item6, item5, item13 );
         Combo combo3 = new Combo(item4, item7, item14);
         Combo combo4 = new Combo(item10, item11, item15);
+        // инициализация комбо для того, чтобы порядок объект-субъект не имел значение
+        Combo combo5 = new Combo(item9, item3, item12);
+        Combo combo6 = new Combo(item5, item6, item13 );
+        Combo combo7 = new Combo(item7, item4, item14);
+        Combo combo8 = new Combo(item11, item10, item15);
 
         List<Combo> comboList1 = new ArrayList<>(List.of(combo1, combo2, combo3, combo4));
 
         // инициализация локаций
         Location location1 = new Location("Beach",
                 "Upon the sunny beach, upon the rising gold, my eyes listen to the light as it plays upon seawater.\n" +
-                        "  Boundless ocean in the north and scaring jungle in the south.");
+                        "  > Ocean in the north\n" +
+                        "  > Jungle in the south");
         Location location2 = new Location("Jungle",
                 "The jungle is a chorus greens that sings the hymn of creation's soul.\n" +
-                        "  Is that caves behind the bushes in the west?");
+                        "  Is that caves behind the bushes in the west?\n" +
+                        "  > Beach in the north\n" +
+                        "  > Caves in the west");
         Location location3 = new Location("Caves",
-                "There's cave lake on the north. I wonder where this lake leads to?");
+                "There's cave lake on the north. I wonder where this lake leads to?\n" +
+                        "  > Jungle in the east\n" +
+                        "  > Mountain in the north");
         Location location4 = new Location("Mountain",
-                "Maybe it's a good place to try to make a call");
+                "Maybe it's a good place to try to make a call...\n" +
+                        "  > Caves are in the south");
         Location location5 = new Location("Ocean",
-                "If only I had a boat...");
+                "If only I had a boat...\n" +
+                        "  > Beach's in the south");
 
         // инициализация игрока
         System.out.print("Insert player name: ");

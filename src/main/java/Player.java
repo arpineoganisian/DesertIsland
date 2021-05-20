@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.Locale;
 import java.util.Optional;
 
 public class Player {
@@ -123,7 +124,38 @@ public class Player {
             }
         }
     }
-    public void makeCombo () {
-
+    public void makeCombo (List<Combo> comboList, String string) {
+        String[] word = string.split("\\s+");
+        if (word.length != 2) {
+            System.out.println("No, no, no. Specify 2 space-separated item name first");
+            return;
+        }
+        if ((Optional.ofNullable(GameUtils.findItem(location.getInventory(), word[0])).isPresent()
+                || Optional.ofNullable(GameUtils.findItem(getInventory(), word[0])).isPresent())
+                && (Optional.ofNullable(GameUtils.findItem(location.getInventory(), word[1])).isPresent()
+                || Optional.ofNullable(GameUtils.findItem(getInventory(), word[1])).isPresent())) {
+            for (Combo c : comboList) {
+                if(c.getObject().getName().toLowerCase().equals(word[0])
+                        && c.getSubject().getName().toLowerCase().equals(word[1])) {
+                    if (c.getResult().getMoveable() == Moveable.MOBILE) {
+                        getInventory().add(c.getResult());
+                        System.out.println("Great! You've made up " + c.getResult().getName());
+                        System.out.println("~ You've got:");
+                        getInventory().show();
+                    }
+                    else {
+                        getLocation().getInventory().add(c.getResult());
+                        System.out.println("Great! You've made up " + c.getResult().getName());
+                        System.out.println("~ At this location: ");
+                        getLocation().getInventory().show();
+                    }
+                    return;
+                }
+            }
+            System.out.println("There is nothing that can be made up of " + word[0].toUpperCase() + " and " + word[1].toUpperCase());
+        }
+        else {
+            System.out.println("There is no such item in " + name + "'s inventory or at the current location");
+        }
     }
 }
