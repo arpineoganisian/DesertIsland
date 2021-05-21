@@ -1,11 +1,10 @@
-package desertIsland.inventory;
+package desertIsland.inventoryTest;
 
 import desertIsland.item.Item;
 import java.util.ArrayList;
 
 public class Inventory {
     private ArrayList<Item> items;
-
 
     public Inventory() {
         this.items = new ArrayList<>();

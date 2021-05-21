@@ -1,6 +1,6 @@
 package desertIsland;
 
-import desertIsland.inventory.Inventory;
+import desertIsland.inventoryTest.Inventory;
 import desertIsland.item.Item;
 
 public class GameUtils {
