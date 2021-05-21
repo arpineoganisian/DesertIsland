@@ -1,3 +1,10 @@
+package desertIsland;
+
+import desertIsland.item.*;
+import desertIsland.location.Direction;
+import desertIsland.location.Location;
+import desertIsland.player.Player;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -107,7 +114,7 @@ public class Main {
             else if(message.length() >= 2 && message.substring(0, 2).compareTo("go") == 0) {
                 player.go(message.substring(2).replaceAll("^\\s+", ""));
             }
-            else if(message.length() >= 9 && message.substring(0, 9).compareTo("inventory") == 0) {
+            else if(message.length() >= 9 && message.substring(0, 9).compareTo("desertIsland/inventory") == 0) {
                 System.out.println("~ You've got:");
                 player.getInventory().show();
             }

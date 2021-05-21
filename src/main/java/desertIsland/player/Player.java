@@ -1,5 +1,15 @@
+package desertIsland.player;
+
+import desertIsland.GameUtils;
+import desertIsland.inventory.Inventory;
+import desertIsland.item.CellPhone;
+import desertIsland.item.Combo;
+import desertIsland.item.Item;
+import desertIsland.item.Moveable;
+import desertIsland.location.Direction;
+import desertIsland.location.Location;
+
 import java.util.List;
-import java.util.Locale;
 import java.util.Optional;
 
 public class Player {

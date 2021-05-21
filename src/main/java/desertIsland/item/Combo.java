@@ -1,3 +1,5 @@
+package desertIsland.item;
+
 public class Combo {
     Item object;
     Item subject;

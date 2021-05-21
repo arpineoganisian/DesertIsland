@@ -1,3 +1,8 @@
+package desertIsland;
+
+import desertIsland.inventory.Inventory;
+import desertIsland.item.Item;
+
 public class GameUtils {
 
     public static void showCommands() {

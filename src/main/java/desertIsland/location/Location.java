@@ -1,3 +1,8 @@
+package desertIsland.location;
+
+import desertIsland.inventory.Inventory;
+import desertIsland.item.Item;
+
 import java.util.HashMap;
 import java.util.Map;
 

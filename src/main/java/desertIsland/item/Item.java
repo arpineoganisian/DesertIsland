@@ -1,3 +1,8 @@
+package desertIsland.item;
+
+import desertIsland.location.Location;
+import desertIsland.player.Player;
+
 public class Item {
 
     private String name;
