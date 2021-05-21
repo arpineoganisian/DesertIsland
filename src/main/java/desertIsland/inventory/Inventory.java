@@ -1,7 +1,8 @@
-package desertIsland.inventoryTest;
+package desertIsland.inventory;
 
 import desertIsland.item.Item;
 import java.util.ArrayList;
+import java.util.Optional;
 
 public class Inventory {
     private ArrayList<Item> items;
@@ -11,11 +12,15 @@ public class Inventory {
     }
 
     public void add(Item item) {
-        items.add(item);
+        if (Optional.ofNullable(item).isPresent()) {
+            items.add(item);
+        }
     }
 
     public void addAll(ArrayList<Item> items) {
-        this.items.addAll(items);
+        if (Optional.ofNullable(items).isPresent()) {
+            this.items.addAll(items);
+        }
     }
 
     public void remove(Item item) {

@@ -1,7 +1,7 @@
 package desertIsland.player;
 
 import desertIsland.GameUtils;
-import desertIsland.inventoryTest.Inventory;
+import desertIsland.inventory.Inventory;
 import desertIsland.item.CellPhone;
 import desertIsland.item.Combo;
 import desertIsland.item.Item;

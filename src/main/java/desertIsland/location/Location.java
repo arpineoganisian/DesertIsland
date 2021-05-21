@@ -1,6 +1,6 @@
 package desertIsland.location;
 
-import desertIsland.inventoryTest.Inventory;
+import desertIsland.inventory.Inventory;
 import desertIsland.item.Item;
 
 import java.util.HashMap;
