@@ -1,5 +1,5 @@
-Text-based adventure game written in Java
-
+####Text-based adventure game written in Java
+____
 :arrow_right: **BACKSTORY**    
 
 Long-awaited journey on a cruise liner ends in disaster. Your ship is wrecked in a storm.    
@@ -8,7 +8,7 @@ There is one way to get back home.
 
 :arrow_right: **HOW TO PLAY**   
 
-You can use following commands:
+Start the console game and use following commands:
 - look around --> to get info about you current location
 - go west / east / south / north --> to change your location
 - inventory --> to list player's inventory
@@ -20,3 +20,5 @@ You can use following commands:
 - health --> to get player's current condition
 - commands --> to list all available commands
 - exit --> to exit the game
+
+[![UML diagram of the project](https://github.com/buhankahleba/DesertIsland/blob/master/DesertIsland-UML.png)]
