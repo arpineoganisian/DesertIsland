@@ -1,665 +1,378 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Diagram>
   <ID>JAVA</ID>
-  <OriginalElement>/Users/hwoodwri/IdeaProjects/DesertIsland</OriginalElement>
+  <OriginalElement>/Users/hwoodwri/IdeaProjects/DesertIsland/src/main/java</OriginalElement>
   <nodes>
-    <node x="985.8883037791877" y="998.0">desertIsland.item.Item</node>
-    <node x="497.0648212208089" y="248.0">desertIsland.location.Direction</node>
-    <node x="1324.875" y="281.5">desertIsland.GameUtils</node>
-    <node x="1951.7633037791877" y="1767.0">desertIsland.item.UsableItem</node>
-    <node x="802.8258037791877" y="1310.0">desertIsland.location.Location</node>
-    <node x="232.0" y="2145.5">desertIsland.Main</node>
-    <node x="335.5" y="1343.0">desertIsland.inventory.InventoryTest</node>
-    <node x="1720.7633037791877" y="1387.0">desertIsland.GameUtilsTest</node>
-    <node x="1135.9531249999966" y="0.0">desertIsland.inventory.Inventory</node>
-    <node x="47.5" y="1690.0">desertIsland.location.LocationTest</node>
-    <node x="707.7633037791877" y="22.0">desertIsland.item.Moveable</node>
-    <node x="719.0648212208089" y="281.0">desertIsland.item.CellPhone</node>
-    <node x="1475.4106031330498" y="1756.0">desertIsland.player.PlayerTest</node>
-    <node x="1192.4085712208089" y="518.0">desertIsland.player.Player</node>
-    <node x="969.0648212208089" y="248.0">desertIsland.item.Combo</node>
-    <node x="1865.875" y="2090.0">desertIsland.item.UsableItemTest</node>
+    <node x="461.24072764419316" y="0.0">desertIsland.location.Direction</node>
+    <node x="325.40920654565485" y="1252.0">desertIsland.item.Item</node>
+    <node x="934.212434189848" y="598.5">desertIsland.GameUtils</node>
+    <node x="103.30751021530773" y="1505.0">desertIsland.item.UsableItem</node>
+    <node x="578.212434189848" y="238.0">desertIsland.location.Location</node>
+    <node x="91.40920654565485" y="1742.0">desertIsland.Main</node>
+    <node x="96.36572764419316" y="326.0">desertIsland.item.Moveable</node>
+    <node x="211.40920654565485" y="598.0">desertIsland.item.CellPhone</node>
+    <node x="400.90920654565485" y="1494.0">desertIsland.item.Combo</node>
+    <node x="467.01286735816484" y="782.0">desertIsland.player.Player</node>
+    <node x="914.7708333333333" y="0.0">desertIsland.inventory.Inventory</node>
   </nodes>
   <notes />
   <edges>
+    <edge source="desertIsland.Main" target="desertIsland.player.Player" relationship="CREATE">
+      <point x="54.666666666666686" y="-27.5" />
+      <point x="228.07587321232154" y="1711.0" />
+      <point x="1224.712434189848" y="1711.0" />
+      <point x="1224.712434189848" y="1220.0" />
+      <point x="531.1592065456548" y="1220.0" />
+      <point x="531.1592065456548" y="1200.0" />
+      <point x="515.5128673581648" y="1200.0" />
+      <point x="-97.0" y="193.0" />
+    </edge>
     <edge source="desertIsland.item.CellPhone" target="desertIsland.item.Item" relationship="GENERALIZATION">
-      <point x="25.875" y="50.0" />
-      <point x="848.4398212208089" y="946.0" />
-      <point x="1037.6383037791877" y="946.0" />
-      <point x="-51.75" y="-94.0" />
+      <point x="0.0" y="50.0" />
+      <point x="314.90920654565485" y="750.0" />
+      <point x="290.2620668316831" y="750.0" />
+      <point x="290.2620668316831" y="1190.0" />
+      <point x="399.3377779742263" y="1190.0" />
+      <point x="-29.571428571428555" y="-94.0" />
     </edge>
     <edge source="desertIsland.player.Player" target="desertIsland.location.Location" relationship="TO_ONE">
-      <point x="-5.6843418860808015E-14" y="193.0" />
-      <point x="1337.9085712208089" y="956.0" />
-      <point x="1305.3811388473355" y="956.0" />
-      <point x="1305.3811388473355" y="1238.0" />
-      <point x="996.9686609220448" y="1238.0" />
-      <point x="43.14285714285717" y="-149.0" />
+      <point x="32.33333333333326" y="-193.0" />
+      <point x="644.8462006914981" y="730.0" />
+      <point x="729.212434189848" y="730.0" />
+      <point x="0.0" y="149.0" />
     </edge>
-    <edge source="desertIsland.inventory.InventoryTest" target="desertIsland.item.Item" relationship="CREATE">
-      <point x="-37.200000000000045" y="-116.0" />
-      <point x="391.29999999999995" y="1278.0" />
-      <point x="395.1383037791877" y="1278.0" />
-      <point x="395.1383037791877" y="1228.0" />
-      <point x="1011.7633037791877" y="1228.0" />
-      <point x="-77.625" y="94.0" />
+    <edge source="desertIsland.item.Combo" target="desertIsland.item.Item" relationship="DEPENDENCY">
+      <point x="-51.66666666666663" y="-83.0" />
+      <point x="426.7425398789882" y="1472.0" />
+      <point x="428.90920654565485" y="1472.0" />
+      <point x="0.0" y="94.0" />
     </edge>
     <edge source="desertIsland.player.Player" target="desertIsland.inventory.Inventory" relationship="TO_ONE">
-      <point x="90.9375" y="-193.0" />
-      <point x="1428.8460712208089" y="486.0" />
-      <point x="1582.375" y="486.0" />
-      <point x="1582.375" y="217.0" />
-      <point x="1615.103236152661" y="217.0" />
-      <point x="1615.103236152661" y="187.0" />
-      <point x="1331.0781249999966" y="187.0" />
-      <point x="83.625" y="83.0" />
+      <point x="64.66666666666663" y="-193.0" />
+      <point x="677.1795340248315" y="740.0" />
+      <point x="890.712434189848" y="740.0" />
+      <point x="890.712434189848" y="197.0" />
+      <point x="942.6458333333333" y="197.0" />
+      <point x="-83.625" y="83.0" />
     </edge>
-    <edge source="desertIsland.location.LocationTest" target="desertIsland.location.Location" relationship="CREATE">
-      <point x="106.66666666666663" y="-149.0" />
-      <point x="282.16666666666663" y="1659.0" />
-      <point x="1699.2633037791877" y="1659.0" />
-      <point x="1699.2633037791877" y="1629.0" />
-      <point x="1029.3258037791877" y="1629.0" />
-      <point x="75.5" y="149.0" />
+    <edge source="desertIsland.location.Location" target="desertIsland.inventory.Inventory" relationship="CREATE">
+      <point x="113.25" y="-149.0" />
+      <point x="842.462434189848" y="217.0" />
+      <point x="914.5128673581648" y="217.0" />
+      <point x="914.5128673581648" y="187.0" />
+      <point x="998.3958333333333" y="187.0" />
+      <point x="-27.875" y="83.0" />
     </edge>
     <edge source="desertIsland.player.Player" target="desertIsland.location.Direction" relationship="DEPENDENCY">
-      <point x="-127.3125" y="-193.0" />
-      <point x="1210.5960712208089" y="496.0" />
-      <point x="579.2633037791877" y="496.0" />
-      <point x="579.2633037791877" y="466.0" />
-      <point x="547.3148212208089" y="466.0" />
+      <point x="0.0" y="-193.0" />
+      <point x="612.5128673581648" y="720.0" />
+      <point x="567.7124341898481" y="720.0" />
+      <point x="567.7124341898481" y="217.0" />
+      <point x="499.86572764419316" y="217.0" />
+      <point x="499.86572764419316" y="207.0" />
+      <point x="511.49072764419316" y="207.0" />
       <point x="-50.25" y="83.0" />
     </edge>
-    <edge source="desertIsland.item.UsableItemTest" target="desertIsland.location.Location" relationship="TO_ONE">
-      <point x="-57.714285714285666" y="-83.0" />
-      <point x="1909.1607142857142" y="2039.0" />
-      <point x="486.5133037791876" y="2039.0" />
-      <point x="486.5133037791877" y="1639.0" />
-      <point x="878.3258037791877" y="1639.0" />
-      <point x="-75.5" y="149.0" />
-    </edge>
-    <edge source="desertIsland.GameUtilsTest" target="desertIsland.inventory.Inventory" relationship="CREATE">
-      <point x="52.5" y="-72.0" />
-      <point x="1878.2633037791877" y="1288.0" />
-      <point x="1848.7505355065232" y="1288.0" />
-      <point x="1848.7505355065232" y="227.0" />
-      <point x="1414.103236152661" y="227.0" />
-      <point x="1414.103236152661" y="197.0" />
-      <point x="1275.3281249999966" y="197.0" />
-      <point x="27.875" y="83.0" />
+    <edge source="desertIsland.Main" target="desertIsland.location.Location" relationship="CREATE">
+      <point x="-36.44444444444446" y="-27.5" />
+      <point x="136.9647621012104" y="1701.0" />
+      <point x="81.80751021530773" y="1701.0" />
+      <point x="81.80751021530773" y="567.0" />
+      <point x="369.6157276441931" y="567.0" />
+      <point x="369.6157276441931" y="557.0" />
+      <point x="628.5457675231814" y="557.0" />
+      <point x="-100.66666666666663" y="149.0" />
     </edge>
     <edge source="desertIsland.Main" target="desertIsland.item.Moveable" relationship="DEPENDENCY">
-      <point x="-72.88888888888891" y="-27.5" />
-      <point x="241.1111111111111" y="2069.0" />
-      <point x="4.0" y="2069.0" />
-      <point x="4.0" y="207.0" />
-      <point x="904.0373888473355" y="207.0" />
-      <point x="904.0373888473355" y="197.0" />
-      <point x="860.7633037791877" y="197.0" />
+      <point x="-54.666666666666686" y="-27.5" />
+      <point x="118.74253987898817" y="1711.0" />
+      <point x="70.80751021530773" y="1711.0" />
+      <point x="70.80751021530773" y="577.0" />
+      <point x="203.86572764419316" y="577.0" />
+      <point x="203.86572764419316" y="557.0" />
+      <point x="249.36572764419316" y="557.0" />
       <point x="51.0" y="61.0" />
     </edge>
     <edge source="desertIsland.item.Combo" target="desertIsland.item.Item" relationship="TO_ONE">
-      <point x="0.0" y="83.0" />
-      <point x="1046.5648212208089" y="466.0" />
-      <point x="1034.3707221806687" y="466.0" />
-      <point x="1034.3707221806687" y="926.0" />
-      <point x="1010.096637112521" y="926.0" />
-      <point x="1010.096637112521" y="976.0" />
-      <point x="1106.6383037791877" y="976.0" />
-      <point x="17.25" y="-94.0" />
+      <point x="0.0" y="-83.0" />
+      <point x="478.40920654565485" y="1472.0" />
+      <point x="497.90920654565485" y="1472.0" />
+      <point x="69.0" y="94.0" />
+    </edge>
+    <edge source="desertIsland.item.Item" target="desertIsland.item.Moveable" relationship="DEPENDENCY">
+      <point x="-59.14285714285711" y="-94.0" />
+      <point x="369.76634940279774" y="1200.0" />
+      <point x="200.90920654565485" y="1200.0" />
+      <point x="200.90920654565485" y="577.0" />
+      <point x="203.86572764419316" y="577.0" />
+      <point x="203.86572764419316" y="557.0" />
+      <point x="249.36572764419316" y="557.0" />
+      <point x="51.0" y="61.0" />
     </edge>
     <edge source="desertIsland.Main" target="desertIsland.item.UsableItem" relationship="CREATE">
-      <point x="72.88888888888891" y="-27.5" />
-      <point x="386.8888888888889" y="2069.0" />
-      <point x="1156.40625" y="2069.0" />
-      <point x="1156.40625" y="2009.0" />
-      <point x="2003.5133037791877" y="2009.0" />
-      <point x="-51.75" y="72.0" />
+      <point x="0.0" y="-27.5" />
+      <point x="173.40920654565485" y="1681.0" />
+      <point x="206.80751021530773" y="1681.0" />
+      <point x="0.0" y="72.0" />
     </edge>
     <edge source="desertIsland.GameUtils" target="desertIsland.item.Item" relationship="DEPENDENCY">
       <point x="-61.75" y="49.5" />
-      <point x="1386.625" y="466.0" />
-      <point x="1167.5648212208089" y="466.0" />
-      <point x="1167.5648212208089" y="926.0" />
-      <point x="1125.375" y="926.0" />
-      <point x="1125.375" y="976.0" />
-      <point x="1141.1383037791877" y="976.0" />
-      <point x="51.75" y="-94.0" />
+      <point x="995.962434189848" y="750.0" />
+      <point x="1009.6458333333333" y="750.0" />
+      <point x="1009.6458333333333" y="1190.0" />
+      <point x="1014.8958333333333" y="1190.0" />
+      <point x="1014.8958333333333" y="1230.0" />
+      <point x="488.0520636885119" y="1230.0" />
+      <point x="59.14285714285711" y="-94.0" />
+    </edge>
+    <edge source="desertIsland.player.Player" target="desertIsland.location.Location" relationship="DEPENDENCY">
+      <point x="-32.33333333333337" y="-193.0" />
+      <point x="580.1795340248315" y="730.0" />
+      <point x="513.5128673581648" y="730.0" />
+      <point x="513.5128673581648" y="567.0" />
+      <point x="369.6157276441931" y="567.0" />
+      <point x="369.6157276441931" y="557.0" />
+      <point x="628.5457675231814" y="557.0" />
+      <point x="-100.66666666666663" y="149.0" />
+    </edge>
+    <edge source="desertIsland.inventory.Inventory" target="desertIsland.item.Item" relationship="DEPENDENCY">
+      <point x="27.875" y="83.0" />
+      <point x="1054.1458333333333" y="207.0" />
+      <point x="1191.712434189848" y="207.0" />
+      <point x="1191.712434189848" y="1190.0" />
+      <point x="1014.8958333333333" y="1190.0" />
+      <point x="1014.8958333333333" y="1230.0" />
+      <point x="488.0520636885119" y="1230.0" />
+      <point x="59.14285714285711" y="-94.0" />
     </edge>
     <edge source="desertIsland.item.Item" target="desertIsland.item.Moveable" relationship="TO_ONE">
-      <point x="-86.25" y="-94.0" />
-      <point x="1003.1383037791877" y="956.0" />
-      <point x="708.5648212208089" y="956.0" />
-      <point x="708.5648212208089" y="197.0" />
-      <point x="758.7633037791877" y="197.0" />
+      <point x="-88.71428571428572" y="-94.0" />
+      <point x="340.19492083136913" y="1210.0" />
+      <point x="189.90920654565485" y="1210.0" />
+      <point x="189.90920654565485" y="557.0" />
+      <point x="147.36572764419316" y="557.0" />
       <point x="-51.0" y="61.0" />
     </edge>
     <edge source="desertIsland.item.UsableItem" target="desertIsland.location.Location" relationship="DEPENDENCY">
-      <point x="-77.625" y="-72.0" />
-      <point x="1977.6383037791877" y="1659.0" />
-      <point x="1699.2633037791877" y="1659.0" />
-      <point x="1699.2633037791877" y="1629.0" />
-      <point x="1029.3258037791877" y="1629.0" />
-      <point x="75.5" y="149.0" />
+      <point x="-25.875" y="-72.0" />
+      <point x="180.93251021530773" y="1472.0" />
+      <point x="147.7570770469909" y="1472.0" />
+      <point x="147.7570770469909" y="567.0" />
+      <point x="369.6157276441931" y="567.0" />
+      <point x="369.6157276441931" y="557.0" />
+      <point x="628.5457675231814" y="557.0" />
+      <point x="-100.66666666666663" y="149.0" />
     </edge>
     <edge source="desertIsland.item.UsableItem" target="desertIsland.item.Item" relationship="GENERALIZATION">
-      <point x="-25.875" y="-72.0" />
-      <point x="2029.3883037791877" y="1669.0" />
-      <point x="2052.625535506523" y="1669.0" />
-      <point x="2052.625535506523" y="1228.0" />
-      <point x="1167.0133037791877" y="1228.0" />
-      <point x="77.625" y="94.0" />
+      <point x="77.625" y="-72.0" />
+      <point x="284.43251021530773" y="1472.0" />
+      <point x="359.90920654565485" y="1472.0" />
+      <point x="-69.0" y="94.0" />
     </edge>
     <edge source="desertIsland.item.UsableItem" target="desertIsland.item.Moveable" relationship="DEPENDENCY">
-      <point x="77.625" y="-72.0" />
-      <point x="2132.8883037791875" y="1659.0" />
-      <point x="2074.625535506523" y="1659.0" />
-      <point x="2074.625535506523" y="207.0" />
-      <point x="904.0373888473355" y="207.0" />
-      <point x="904.0373888473355" y="197.0" />
-      <point x="860.7633037791877" y="197.0" />
+      <point x="-77.625" y="-72.0" />
+      <point x="129.18251021530773" y="1472.0" />
+      <point x="124.91037050133599" y="1472.0" />
+      <point x="124.91037050133599" y="577.0" />
+      <point x="203.86572764419316" y="577.0" />
+      <point x="203.86572764419316" y="557.0" />
+      <point x="249.36572764419316" y="557.0" />
       <point x="51.0" y="61.0" />
     </edge>
-    <edge source="desertIsland.player.Player" target="desertIsland.GameUtils" relationship="DEPENDENCY">
-      <point x="127.3125" y="-193.0" />
-      <point x="1465.2210712208089" y="496.0" />
-      <point x="1730.103236152661" y="496.0" />
-      <point x="1730.103236152661" y="476.0" />
-      <point x="1510.125" y="476.0" />
-      <point x="61.75" y="49.5" />
+    <edge source="desertIsland.inventory.Inventory" target="desertIsland.item.Item" relationship="TO_MANY">
+      <point x="83.625" y="83.0" />
+      <point x="1109.8958333333333" y="197.0" />
+      <point x="1202.712434189848" y="197.0" />
+      <point x="1202.712434189848" y="1210.0" />
+      <point x="517.6234922599406" y="1210.0" />
+      <point x="88.71428571428578" y="-94.0" />
     </edge>
-    <edge source="desertIsland.item.UsableItemTest" target="desertIsland.player.Player" relationship="CREATE">
-      <point x="0.0" y="-83.0" />
-      <point x="1966.875" y="2019.0" />
-      <point x="1941.2633037791877" y="2019.0" />
-      <point x="1941.2633037791877" y="966.0" />
-      <point x="1626.375" y="966.0" />
-      <point x="1626.375" y="956.0" />
-      <point x="1396.108571220809" y="956.0" />
-      <point x="58.19999999999996" y="193.0" />
+    <edge source="desertIsland.player.Player" target="desertIsland.item.Combo" relationship="DEPENDENCY">
+      <point x="97.0" y="193.0" />
+      <point x="709.5128673581648" y="1200.0" />
+      <point x="1213.712434189848" y="1200.0" />
+      <point x="1213.712434189848" y="1472.0" />
+      <point x="530.0758732123215" y="1472.0" />
+      <point x="51.66666666666663" y="-83.0" />
+    </edge>
+    <edge source="desertIsland.item.CellPhone" target="desertIsland.player.Player" relationship="DEPENDENCY">
+      <point x="69.0" y="50.0" />
+      <point x="383.90920654565485" y="750.0" />
+      <point x="515.5128673581648" y="750.0" />
+      <point x="-97.0" y="-193.0" />
+    </edge>
+    <edge source="desertIsland.player.Player" target="desertIsland.item.CellPhone" relationship="DEPENDENCY">
+      <point x="-129.33333333333337" y="-193.0" />
+      <point x="483.17953402483147" y="760.0" />
+      <point x="263.06249999999994" y="760.0" />
+      <point x="263.06249999999994" y="750.0" />
+      <point x="245.90920654565485" y="750.0" />
+      <point x="-69.0" y="50.0" />
+    </edge>
+    <edge source="desertIsland.item.Item" target="desertIsland.location.Location" relationship="DEPENDENCY">
+      <point x="0.0" y="-94.0" />
+      <point x="428.90920654565485" y="567.0" />
+      <point x="369.6157276441931" y="567.0" />
+      <point x="369.6157276441931" y="557.0" />
+      <point x="628.5457675231814" y="557.0" />
+      <point x="-100.66666666666663" y="149.0" />
+    </edge>
+    <edge source="desertIsland.location.Location" target="desertIsland.item.Item" relationship="DEPENDENCY">
+      <point x="100.66666666666674" y="149.0" />
+      <point x="829.8791008565147" y="577.0" />
+      <point x="923.712434189848" y="577.0" />
+      <point x="923.712434189848" y="1190.0" />
+      <point x="1014.8958333333333" y="1190.0" />
+      <point x="1014.8958333333333" y="1230.0" />
+      <point x="488.0520636885119" y="1230.0" />
+      <point x="59.14285714285711" y="-94.0" />
+    </edge>
+    <edge source="desertIsland.player.Player" target="desertIsland.GameUtils" relationship="DEPENDENCY">
+      <point x="129.33333333333337" y="-193.0" />
+      <point x="741.8462006914982" y="760.0" />
+      <point x="1020.1458333333333" y="760.0" />
+      <point x="1020.1458333333333" y="750.0" />
+      <point x="1119.462434189848" y="750.0" />
+      <point x="61.75" y="49.5" />
     </edge>
     <edge source="desertIsland.item.UsableItem" target="desertIsland.player.Player" relationship="DEPENDENCY">
       <point x="25.875" y="-72.0" />
-      <point x="2081.1383037791875" y="1669.0" />
-      <point x="2063.625535506523" y="1669.0" />
-      <point x="2063.625535506523" y="966.0" />
-      <point x="1626.375" y="966.0" />
-      <point x="1626.375" y="956.0" />
-      <point x="1396.108571220809" y="956.0" />
-      <point x="58.19999999999996" y="193.0" />
+      <point x="232.68251021530773" y="1462.0" />
+      <point x="158.7570770469909" y="1462.0" />
+      <point x="158.7570770469909" y="1220.0" />
+      <point x="531.1592065456548" y="1220.0" />
+      <point x="531.1592065456548" y="1200.0" />
+      <point x="515.5128673581648" y="1200.0" />
+      <point x="-97.0" y="193.0" />
     </edge>
     <edge source="desertIsland.Main" target="desertIsland.location.Direction" relationship="DEPENDENCY">
-      <point x="-54.66666666666674" y="-27.5" />
-      <point x="259.33333333333326" y="2059.0" />
-      <point x="15.0" y="2059.0" />
-      <point x="15.0" y="496.0" />
-      <point x="579.2633037791877" y="496.0" />
-      <point x="579.2633037791877" y="466.0" />
-      <point x="547.3148212208089" y="466.0" />
+      <point x="-72.88888888888891" y="-27.5" />
+      <point x="100.52031765676594" y="1721.0" />
+      <point x="0.0" y="1721.0" />
+      <point x="0.0" y="217.0" />
+      <point x="499.86572764419316" y="217.0" />
+      <point x="499.86572764419316" y="207.0" />
+      <point x="511.49072764419316" y="207.0" />
       <point x="-50.25" y="83.0" />
     </edge>
     <edge source="desertIsland.Main" target="desertIsland.item.Combo" relationship="CREATE">
-      <point x="-18.22222222222217" y="-27.5" />
-      <point x="295.7777777777778" y="2039.0" />
-      <point x="37.0" y="2039.0" />
-      <point x="37.0" y="1258.0" />
-      <point x="209.2947916666633" y="1258.0" />
-      <point x="209.2947916666633" y="476.0" />
-      <point x="1010.125" y="476.0" />
-      <point x="1010.125" y="446.0" />
-      <point x="994.8981545541424" y="446.0" />
-      <point x="-51.66666666666663" y="83.0" />
+      <point x="36.44444444444446" y="-27.5" />
+      <point x="209.8536509900993" y="1701.0" />
+      <point x="478.40920654565485" y="1701.0" />
+      <point x="0.0" y="83.0" />
     </edge>
     <edge source="desertIsland.item.Item" target="desertIsland.player.Player" relationship="DEPENDENCY">
-      <point x="86.25" y="-94.0" />
-      <point x="1175.6383037791877" y="966.0" />
-      <point x="1626.375" y="966.0" />
-      <point x="1626.375" y="956.0" />
-      <point x="1396.108571220809" y="956.0" />
-      <point x="58.19999999999996" y="193.0" />
+      <point x="29.571428571428555" y="-94.0" />
+      <point x="458.4806351170834" y="1220.0" />
+      <point x="531.1592065456548" y="1220.0" />
+      <point x="531.1592065456548" y="1200.0" />
+      <point x="515.5128673581648" y="1200.0" />
+      <point x="-97.0" y="193.0" />
     </edge>
     <edge source="desertIsland.player.Player" target="desertIsland.item.Item" relationship="DEPENDENCY">
-      <point x="-116.4" y="193.0" />
-      <point x="1221.508571220809" y="926.0" />
-      <point x="1125.375" y="926.0" />
-      <point x="1125.375" y="976.0" />
-      <point x="1141.1383037791877" y="976.0" />
-      <point x="51.75" y="-94.0" />
-    </edge>
-    <edge source="desertIsland.item.CellPhone" target="desertIsland.location.Location" relationship="DEPENDENCY">
-      <point x="-77.625" y="50.0" />
-      <point x="744.9398212208089" y="466.0" />
-      <point x="655.0373888473355" y="466.0" />
-      <point x="655.0373888473355" y="1208.0" />
-      <point x="946.625" y="1208.0" />
-      <point x="946.625" y="1288.0" />
-      <point x="953.8258037791877" y="1288.0" />
-      <point x="2.8421709430404007E-14" y="-149.0" />
-    </edge>
-    <edge source="desertIsland.player.Player" target="desertIsland.item.Moveable" relationship="DEPENDENCY">
-      <point x="18.1875" y="-193.0" />
-      <point x="1356.0960712208089" y="446.0" />
-      <point x="1303.375" y="446.0" />
-      <point x="1303.375" y="207.0" />
-      <point x="904.0373888473355" y="207.0" />
-      <point x="904.0373888473355" y="197.0" />
-      <point x="860.7633037791877" y="197.0" />
-      <point x="51.0" y="61.0" />
-    </edge>
-    <edge source="desertIsland.Main" target="desertIsland.item.Item" relationship="CREATE">
-      <point x="18.22222222222217" y="-27.5" />
-      <point x="332.2222222222222" y="2069.0" />
-      <point x="325.0" y="2069.0" />
-      <point x="325.0" y="1278.0" />
-      <point x="395.1383037791877" y="1278.0" />
-      <point x="395.1383037791877" y="1228.0" />
-      <point x="1011.7633037791877" y="1228.0" />
-      <point x="-77.625" y="94.0" />
-    </edge>
-    <edge source="desertIsland.item.UsableItemTest" target="desertIsland.item.UsableItem" relationship="CREATE">
-      <point x="-86.57142857142856" y="-83.0" />
-      <point x="1880.3035714285716" y="2069.0" />
-      <point x="1156.40625" y="2069.0" />
-      <point x="1156.40625" y="2009.0" />
-      <point x="2003.5133037791877" y="2009.0" />
-      <point x="-51.75" y="72.0" />
-    </edge>
-    <edge source="desertIsland.player.Player" target="desertIsland.inventory.Inventory" relationship="CREATE">
-      <point x="54.5625" y="-193.0" />
-      <point x="1392.4710712208089" y="436.0" />
-      <point x="1314.375" y="436.0" />
-      <point x="1314.375" y="227.0" />
-      <point x="1414.103236152661" y="227.0" />
-      <point x="1414.103236152661" y="197.0" />
-      <point x="1275.3281249999966" y="197.0" />
-      <point x="27.875" y="83.0" />
-    </edge>
-    <edge source="desertIsland.location.Location" target="desertIsland.inventory.Inventory" relationship="TO_ONE">
-      <point x="129.42857142857144" y="-149.0" />
-      <point x="1083.254375207759" y="1258.0" />
-      <point x="1615.375" y="1258.0" />
-      <point x="1615.103236152661" y="187.0" />
-      <point x="1331.0781249999966" y="187.0" />
-      <point x="83.625" y="83.0" />
-    </edge>
-    <edge source="desertIsland.location.Location" target="desertIsland.location.Direction" relationship="DEPENDENCY">
-      <point x="-86.28571428571425" y="-149.0" />
-      <point x="867.5400894934734" y="1258.0" />
-      <point x="593.2873888473355" y="1258.0" />
-      <point x="593.2873888473355" y="496.0" />
-      <point x="579.2633037791877" y="496.0" />
-      <point x="579.2633037791877" y="466.0" />
-      <point x="547.3148212208089" y="466.0" />
-      <point x="-50.25" y="83.0" />
-    </edge>
-    <edge source="desertIsland.item.UsableItemTest" target="desertIsland.player.Player" relationship="TO_ONE">
-      <point x="57.71428571428578" y="-83.0" />
-      <point x="2024.5892857142858" y="2059.0" />
-      <point x="2169.2633037791875" y="2059.0" />
-      <point x="2169.2633037791875" y="956.0" />
-      <point x="1670.103236152661" y="956.0" />
-      <point x="1670.103236152661" y="946.0" />
-      <point x="1454.308571220809" y="946.0" />
-      <point x="116.39999999999998" y="193.0" />
-    </edge>
-    <edge source="desertIsland.Main" target="desertIsland.player.Player" relationship="CREATE">
-      <point x="0.0" y="-27.5" />
-      <point x="314.0" y="966.0" />
-      <point x="1626.375" y="966.0" />
-      <point x="1626.375" y="956.0" />
-      <point x="1396.108571220809" y="956.0" />
-      <point x="58.19999999999996" y="193.0" />
-    </edge>
-    <edge source="desertIsland.inventory.InventoryTest" target="desertIsland.item.Moveable" relationship="DEPENDENCY">
-      <point x="-74.39999999999998" y="-116.0" />
-      <point x="354.1" y="1258.0" />
-      <point x="384.1383037791877" y="1258.0" />
-      <point x="384.1383037791877" y="207.0" />
-      <point x="904.0373888473355" y="207.0" />
-      <point x="904.0373888473355" y="197.0" />
-      <point x="860.7633037791877" y="197.0" />
-      <point x="51.0" y="61.0" />
-    </edge>
-    <edge source="desertIsland.item.Combo" target="desertIsland.item.Item" relationship="DEPENDENCY">
-      <point x="51.66666666666663" y="83.0" />
-      <point x="1098.2314878874756" y="466.0" />
-      <point x="1065.096637112521" y="466.0" />
-      <point x="1065.096637112521" y="926.0" />
-      <point x="1125.375" y="926.0" />
-      <point x="1125.375" y="976.0" />
-      <point x="1141.1383037791877" y="976.0" />
-      <point x="51.75" y="-94.0" />
-    </edge>
-    <edge source="desertIsland.location.Location" target="desertIsland.inventory.Inventory" relationship="CREATE">
-      <point x="86.2857142857143" y="-149.0" />
-      <point x="1040.111518064902" y="1248.0" />
-      <point x="1604.375" y="1248.0" />
-      <point x="1604.375" y="227.0" />
-      <point x="1414.103236152661" y="227.0" />
-      <point x="1414.103236152661" y="197.0" />
-      <point x="1275.3281249999966" y="197.0" />
-      <point x="27.875" y="83.0" />
-    </edge>
-    <edge source="desertIsland.GameUtilsTest" target="desertIsland.GameUtils" relationship="DEPENDENCY">
-      <point x="-17.5" y="-72.0" />
-      <point x="1808.2633037791877" y="1288.0" />
-      <point x="1818.9106031330498" y="1288.0" />
-      <point x="1818.9106031330498" y="496.0" />
-      <point x="1730.103236152661" y="496.0" />
-      <point x="1730.103236152661" y="476.0" />
-      <point x="1510.125" y="476.0" />
-      <point x="61.75" y="49.5" />
-    </edge>
-    <edge source="desertIsland.Main" target="desertIsland.location.Location" relationship="CREATE">
-      <point x="36.44444444444446" y="-27.5" />
-      <point x="350.44444444444446" y="2049.0" />
-      <point x="1699.2633037791875" y="2049.0" />
-      <point x="1699.2633037791877" y="1629.0" />
-      <point x="1029.3258037791877" y="1629.0" />
-      <point x="75.5" y="149.0" />
-    </edge>
-    <edge source="desertIsland.item.Item" target="desertIsland.item.Moveable" relationship="DEPENDENCY">
-      <point x="-17.25" y="-94.0" />
-      <point x="1072.1383037791877" y="936.0" />
-      <point x="936.5648212208089" y="936.0" />
-      <point x="936.5648212208089" y="207.0" />
-      <point x="904.0373888473355" y="207.0" />
-      <point x="904.0373888473355" y="197.0" />
-      <point x="860.7633037791877" y="197.0" />
-      <point x="51.0" y="61.0" />
-    </edge>
-    <edge source="desertIsland.player.Player" target="desertIsland.location.Location" relationship="DEPENDENCY">
-      <point x="-58.20000000000002" y="193.0" />
-      <point x="1279.7085712208088" y="956.0" />
-      <point x="1239.675" y="956.0" />
-      <point x="1239.675" y="1208.0" />
-      <point x="946.625" y="1208.0" />
-      <point x="946.625" y="1288.0" />
-      <point x="953.8258037791877" y="1288.0" />
-      <point x="2.8421709430404007E-14" y="-149.0" />
-    </edge>
-    <edge source="desertIsland.inventory.Inventory" target="desertIsland.item.Item" relationship="DEPENDENCY">
-      <point x="-27.875" y="83.0" />
-      <point x="1219.5781249999966" y="197.0" />
-      <point x="1134.5648212208089" y="197.0" />
-      <point x="1134.5648212208089" y="926.0" />
-      <point x="1125.375" y="926.0" />
-      <point x="1125.375" y="976.0" />
-      <point x="1141.1383037791877" y="976.0" />
-      <point x="51.75" y="-94.0" />
-    </edge>
-    <edge source="desertIsland.item.UsableItemTest" target="desertIsland.item.UsableItem" relationship="TO_ONE">
-      <point x="28.85714285714289" y="-83.0" />
-      <point x="1995.732142857143" y="2049.0" />
-      <point x="2107.0133037791875" y="2049.0" />
-      <point x="51.75" y="72.0" />
-    </edge>
-    <edge source="desertIsland.inventory.Inventory" target="desertIsland.item.Item" relationship="TO_MANY">
-      <point x="-83.625" y="83.0" />
-      <point x="1163.8281249999966" y="187.0" />
-      <point x="958.5648212208089" y="187.0" />
-      <point x="958.5648212208089" y="926.0" />
-      <point x="1010.096637112521" y="926.0" />
-      <point x="1010.096637112521" y="976.0" />
-      <point x="1106.6383037791877" y="976.0" />
-      <point x="17.25" y="-94.0" />
-    </edge>
-    <edge source="desertIsland.location.LocationTest" target="desertIsland.item.Item" relationship="TO_ONE">
-      <point x="21.33333333333337" y="-149.0" />
-      <point x="196.83333333333337" y="1669.0" />
-      <point x="174.17072218066903" y="1669.0" />
-      <point x="174.17072218066903" y="1268.0" />
-      <point x="432.0373888473356" y="1268.0" />
-      <point x="432.0373888473356" y="1218.0" />
-      <point x="1063.5133037791875" y="1218.0" />
-      <point x="-25.875" y="94.0" />
-    </edge>
-    <edge source="desertIsland.player.Player" target="desertIsland.item.Combo" relationship="DEPENDENCY">
-      <point x="-54.5625" y="-193.0" />
-      <point x="1283.3460712208089" y="476.0" />
-      <point x="1010.125" y="476.0" />
-      <point x="1010.125" y="446.0" />
-      <point x="994.8981545541424" y="446.0" />
-      <point x="-51.66666666666663" y="83.0" />
-    </edge>
-    <edge source="desertIsland.player.PlayerTest" target="desertIsland.player.Player" relationship="TO_ONE">
-      <point x="35.200000000000045" y="-83.0" />
-      <point x="1598.6106031330498" y="1649.0" />
-      <point x="1670.103236152661" y="1649.0" />
-      <point x="1670.103236152661" y="946.0" />
-      <point x="1454.308571220809" y="946.0" />
-      <point x="116.39999999999998" y="193.0" />
-    </edge>
-    <edge source="desertIsland.item.UsableItemTest" target="desertIsland.location.Location" relationship="CREATE">
-      <point x="-28.85714285714289" y="-83.0" />
-      <point x="1938.017857142857" y="2029.0" />
-      <point x="1818.7505355065232" y="2029.0" />
-      <point x="1818.7505355065232" y="1659.0" />
-      <point x="1699.2633037791877" y="1659.0" />
-      <point x="1699.2633037791877" y="1629.0" />
-      <point x="1029.3258037791877" y="1629.0" />
-      <point x="75.5" y="149.0" />
-    </edge>
-    <edge source="desertIsland.item.Item" target="desertIsland.location.Location" relationship="DEPENDENCY">
-      <point x="25.875" y="94.0" />
-      <point x="1115.2633037791877" y="1208.0" />
-      <point x="946.625" y="1208.0" />
-      <point x="946.625" y="1288.0" />
-      <point x="953.8258037791877" y="1288.0" />
-      <point x="2.8421709430404007E-14" y="-149.0" />
-    </edge>
-    <edge source="desertIsland.player.Player" target="desertIsland.item.CellPhone" relationship="DEPENDENCY">
-      <point x="-90.9375" y="-193.0" />
-      <point x="1246.9710712208089" y="486.0" />
-      <point x="665.5373888473355" y="486.0" />
-      <point x="665.5373888473355" y="456.0" />
-      <point x="796.6898212208089" y="456.0" />
-      <point x="-25.875" y="50.0" />
-    </edge>
-    <edge source="desertIsland.GameUtilsTest" target="desertIsland.item.Item" relationship="TO_ONE">
-      <point x="-52.5" y="-72.0" />
-      <point x="1773.2633037791877" y="1268.0" />
-      <point x="432.0373888473356" y="1268.0" />
-      <point x="432.0373888473356" y="1218.0" />
-      <point x="1063.5133037791875" y="1218.0" />
-      <point x="-25.875" y="94.0" />
-    </edge>
-    <edge source="desertIsland.item.CellPhone" target="desertIsland.player.Player" relationship="DEPENDENCY">
-      <point x="77.625" y="50.0" />
-      <point x="900.1898212208089" y="456.0" />
-      <point x="1319.7210712208089" y="456.0" />
-      <point x="-18.1875" y="-193.0" />
-    </edge>
-    <edge source="desertIsland.location.Location" target="desertIsland.item.Item" relationship="DEPENDENCY">
-      <point x="-129.4285714285714" y="-149.0" />
-      <point x="824.3972323506163" y="1278.0" />
-      <point x="395.1383037791877" y="1278.0" />
-      <point x="395.1383037791877" y="1228.0" />
-      <point x="1011.7633037791877" y="1228.0" />
-      <point x="-77.625" y="94.0" />
-    </edge>
-    <edge source="desertIsland.item.UsableItemTest" target="desertIsland.item.Moveable" relationship="DEPENDENCY">
-      <point x="86.57142857142856" y="-83.0" />
-      <point x="2053.4464285714284" y="2069.0" />
-      <point x="2180.2633037791875" y="2069.0" />
-      <point x="2180.2633037791875" y="207.0" />
-      <point x="904.0373888473355" y="207.0" />
-      <point x="904.0373888473355" y="197.0" />
-      <point x="860.7633037791877" y="197.0" />
-      <point x="51.0" y="61.0" />
-    </edge>
-    <edge source="desertIsland.inventory.InventoryTest" target="desertIsland.item.Item" relationship="TO_ONE">
-      <point x="0.0" y="-116.0" />
-      <point x="428.5" y="1268.0" />
-      <point x="432.0373888473356" y="1268.0" />
-      <point x="432.0373888473356" y="1218.0" />
-      <point x="1063.5133037791875" y="1218.0" />
-      <point x="-25.875" y="94.0" />
-    </edge>
-    <edge source="desertIsland.location.LocationTest" target="desertIsland.location.Location" relationship="TO_ONE">
-      <point x="64.0" y="-149.0" />
-      <point x="239.5" y="1669.0" />
-      <point x="486.5133037791877" y="1669.0" />
-      <point x="486.5133037791877" y="1639.0" />
-      <point x="878.3258037791877" y="1639.0" />
-      <point x="-75.5" y="149.0" />
-    </edge>
-    <edge source="desertIsland.player.PlayerTest" target="desertIsland.location.Location" relationship="TO_ONE">
-      <point x="-70.39999999999998" y="-83.0" />
-      <point x="1493.0106031330497" y="1669.0" />
-      <point x="486.5133037791877" y="1669.0" />
-      <point x="486.5133037791877" y="1639.0" />
-      <point x="878.3258037791877" y="1639.0" />
-      <point x="-75.5" y="149.0" />
-    </edge>
-    <edge source="desertIsland.GameUtilsTest" target="desertIsland.item.Moveable" relationship="DEPENDENCY">
-      <point x="17.5" y="-72.0" />
-      <point x="1843.2633037791877" y="1288.0" />
-      <point x="1829.9106031330498" y="1288.0" />
-      <point x="1829.9106031330498" y="207.0" />
-      <point x="904.0373888473355" y="207.0" />
-      <point x="904.0373888473355" y="197.0" />
-      <point x="860.7633037791877" y="197.0" />
-      <point x="51.0" y="61.0" />
-    </edge>
-    <edge source="desertIsland.location.LocationTest" target="desertIsland.item.Item" relationship="CREATE">
-      <point x="-21.333333333333258" y="-149.0" />
-      <point x="154.16666666666674" y="1669.0" />
-      <point x="163.17072218066903" y="1669.0" />
-      <point x="163.17072218066903" y="1278.0" />
-      <point x="395.1383037791877" y="1278.0" />
-      <point x="395.1383037791877" y="1228.0" />
-      <point x="1011.7633037791877" y="1228.0" />
-      <point x="-77.625" y="94.0" />
-    </edge>
-    <edge source="desertIsland.player.PlayerTest" target="desertIsland.player.Player" relationship="CREATE">
-      <point x="0.0" y="-83.0" />
-      <point x="1563.4106031330498" y="1639.0" />
-      <point x="1626.375" y="1639.0" />
-      <point x="1626.375" y="956.0" />
-      <point x="1396.108571220809" y="956.0" />
-      <point x="58.19999999999996" y="193.0" />
-    </edge>
-    <edge source="desertIsland.inventory.InventoryTest" target="desertIsland.inventory.Inventory" relationship="CREATE">
-      <point x="37.200000000000045" y="-116.0" />
-      <point x="465.1898212208091" y="227.0" />
-      <point x="1414.103236152661" y="227.0" />
-      <point x="1414.103236152661" y="197.0" />
-      <point x="1275.3281249999966" y="197.0" />
-      <point x="27.875" y="83.0" />
+      <point x="0.0" y="193.0" />
+      <point x="612.5128673581648" y="1190.0" />
+      <point x="1014.8958333333333" y="1190.0" />
+      <point x="1014.8958333333333" y="1230.0" />
+      <point x="488.0520636885119" y="1230.0" />
+      <point x="59.14285714285711" y="-94.0" />
     </edge>
     <edge source="desertIsland.GameUtils" target="desertIsland.inventory.Inventory" relationship="DEPENDENCY">
       <point x="0.0" y="-49.5" />
-      <point x="1448.375" y="227.0" />
-      <point x="1414.103236152661" y="227.0" />
-      <point x="1414.103236152661" y="197.0" />
-      <point x="1275.3281249999966" y="197.0" />
-      <point x="27.875" y="83.0" />
+      <point x="1057.712434189848" y="217.0" />
+      <point x="914.5128673581648" y="217.0" />
+      <point x="914.5128673581648" y="187.0" />
+      <point x="998.3958333333333" y="187.0" />
+      <point x="-27.875" y="83.0" />
+    </edge>
+    <edge source="desertIsland.item.CellPhone" target="desertIsland.location.Location" relationship="DEPENDENCY">
+      <point x="51.74999999999994" y="-50.0" />
+      <point x="366.6592065456548" y="567.0" />
+      <point x="369.6157276441931" y="567.0" />
+      <point x="369.6157276441931" y="557.0" />
+      <point x="628.5457675231814" y="557.0" />
+      <point x="-100.66666666666663" y="149.0" />
     </edge>
     <edge source="desertIsland.Main" target="desertIsland.GameUtils" relationship="DEPENDENCY">
-      <point x="54.66666666666663" y="-27.5" />
-      <point x="368.66666666666663" y="2059.0" />
-      <point x="1710.2633037791875" y="2059.0" />
-      <point x="1710.2633037791877" y="496.0" />
-      <point x="1730.103236152661" y="496.0" />
-      <point x="1730.103236152661" y="476.0" />
-      <point x="1510.125" y="476.0" />
+      <point x="72.88888888888886" y="-27.5" />
+      <point x="246.2980954345437" y="1721.0" />
+      <point x="1235.712434189848" y="1721.0" />
+      <point x="1235.712434189848" y="760.0" />
+      <point x="1020.1458333333333" y="760.0" />
+      <point x="1020.1458333333333" y="750.0" />
+      <point x="1119.462434189848" y="750.0" />
       <point x="61.75" y="49.5" />
     </edge>
-    <edge source="desertIsland.player.PlayerTest" target="desertIsland.location.Direction" relationship="DEPENDENCY">
-      <point x="-35.200000000000045" y="-83.0" />
-      <point x="1528.2106031330497" y="1649.0" />
-      <point x="573.7633037791877" y="1649.0" />
-      <point x="573.7633037791877" y="496.0" />
-      <point x="579.2633037791877" y="496.0" />
-      <point x="579.2633037791877" y="466.0" />
-      <point x="547.3148212208089" y="466.0" />
-      <point x="-50.25" y="83.0" />
-    </edge>
-    <edge source="desertIsland.GameUtilsTest" target="desertIsland.item.Item" relationship="CREATE">
-      <point x="-87.5" y="-72.0" />
-      <point x="1738.2633037791877" y="1278.0" />
-      <point x="395.1383037791877" y="1278.0" />
-      <point x="395.1383037791877" y="1228.0" />
-      <point x="1011.7633037791877" y="1228.0" />
-      <point x="-77.625" y="94.0" />
-    </edge>
-    <edge source="desertIsland.GameUtilsTest" target="desertIsland.inventory.Inventory" relationship="TO_ONE">
-      <point x="87.5" y="-72.0" />
-      <point x="1913.2633037791877" y="1278.0" />
-      <point x="1859.7505355065232" y="1278.0" />
-      <point x="1859.7505355065232" y="217.0" />
-      <point x="1615.103236152661" y="217.0" />
-      <point x="1615.103236152661" y="187.0" />
-      <point x="1331.0781249999966" y="187.0" />
-      <point x="83.625" y="83.0" />
+    <edge source="desertIsland.player.Player" target="desertIsland.item.Moveable" relationship="DEPENDENCY">
+      <point x="-64.66666666666674" y="-193.0" />
+      <point x="547.8462006914981" y="740.0" />
+      <point x="487.15920654565485" y="740.0" />
+      <point x="487.15920654565485" y="577.0" />
+      <point x="203.86572764419316" y="577.0" />
+      <point x="203.86572764419316" y="557.0" />
+      <point x="249.36572764419316" y="557.0" />
+      <point x="51.0" y="61.0" />
     </edge>
     <edge source="desertIsland.location.Location" target="desertIsland.location.Direction" relationship="TO_MANY">
-      <point x="-43.14285714285711" y="-149.0" />
-      <point x="910.6829466363306" y="1248.0" />
-      <point x="615.2873888473355" y="1248.0" />
-      <point x="615.2873888473355" y="466.0" />
-      <point x="647.8148212208089" y="466.0" />
+      <point x="-37.75" y="-149.0" />
+      <point x="691.462434189848" y="207.0" />
+      <point x="611.9907276441932" y="207.0" />
       <point x="50.25" y="83.0" />
     </edge>
-    <edge source="desertIsland.location.LocationTest" target="desertIsland.item.Moveable" relationship="DEPENDENCY">
-      <point x="-106.66666666666663" y="-149.0" />
-      <point x="68.83333333333337" y="1659.0" />
-      <point x="128.71145833333003" y="1659.0" />
-      <point x="128.71145833333003" y="207.0" />
-      <point x="904.0373888473355" y="207.0" />
-      <point x="904.0373888473355" y="197.0" />
-      <point x="860.7633037791877" y="197.0" />
-      <point x="51.0" y="61.0" />
+    <edge source="desertIsland.Main" target="desertIsland.item.Item" relationship="CREATE">
+      <point x="18.22222222222223" y="-27.5" />
+      <point x="191.63142876787708" y="1691.0" />
+      <point x="390.40920654565485" y="1691.0" />
+      <point x="390.40920654565485" y="1472.0" />
+      <point x="428.90920654565485" y="1472.0" />
+      <point x="0.0" y="94.0" />
     </edge>
     <edge source="desertIsland.Main" target="desertIsland.item.CellPhone" relationship="CREATE">
-      <point x="-36.44444444444446" y="-27.5" />
-      <point x="277.55555555555554" y="2049.0" />
-      <point x="26.0" y="2049.0" />
-      <point x="26.0" y="486.0" />
-      <point x="665.5373888473355" y="486.0" />
-      <point x="665.5373888473355" y="456.0" />
-      <point x="796.6898212208089" y="456.0" />
-      <point x="-25.875" y="50.0" />
+      <point x="-18.22222222222223" y="-27.5" />
+      <point x="155.18698432343263" y="1691.0" />
+      <point x="92.80751021530773" y="1691.0" />
+      <point x="92.80751021530773" y="760.0" />
+      <point x="263.06249999999994" y="760.0" />
+      <point x="263.06249999999994" y="750.0" />
+      <point x="245.90920654565485" y="750.0" />
+      <point x="-69.0" y="50.0" />
     </edge>
     <edge source="desertIsland.item.CellPhone" target="desertIsland.item.Moveable" relationship="DEPENDENCY">
-      <point x="0.0" y="-50.0" />
-      <point x="822.5648212208089" y="207.0" />
-      <point x="904.0373888473355" y="207.0" />
-      <point x="904.0373888473355" y="197.0" />
-      <point x="860.7633037791877" y="197.0" />
+      <point x="-51.75000000000006" y="-50.0" />
+      <point x="263.1592065456548" y="577.0" />
+      <point x="203.86572764419316" y="577.0" />
+      <point x="203.86572764419316" y="557.0" />
+      <point x="249.36572764419316" y="557.0" />
       <point x="51.0" y="61.0" />
     </edge>
-    <edge source="desertIsland.inventory.InventoryTest" target="desertIsland.inventory.Inventory" relationship="TO_ONE">
-      <point x="74.39999999999998" y="-116.0" />
-      <point x="502.9" y="1258.0" />
-      <point x="476.1898212208091" y="1258.0" />
-      <point x="476.1898212208091" y="217.0" />
-      <point x="1615.103236152661" y="217.0" />
-      <point x="1615.103236152661" y="187.0" />
-      <point x="1331.0781249999966" y="187.0" />
-      <point x="83.625" y="83.0" />
+    <edge source="desertIsland.player.Player" target="desertIsland.inventory.Inventory" relationship="CREATE">
+      <point x="97.0" y="-193.0" />
+      <point x="709.5128673581648" y="750.0" />
+      <point x="901.712434189848" y="750.0" />
+      <point x="901.712434189848" y="217.0" />
+      <point x="914.5128673581648" y="217.0" />
+      <point x="914.5128673581648" y="187.0" />
+      <point x="998.3958333333333" y="187.0" />
+      <point x="-27.875" y="83.0" />
     </edge>
-    <edge source="desertIsland.player.PlayerTest" target="desertIsland.location.Location" relationship="CREATE">
-      <point x="70.39999999999998" y="-83.0" />
-      <point x="1633.8106031330499" y="1659.0" />
-      <point x="1699.2633037791877" y="1659.0" />
-      <point x="1699.2633037791877" y="1629.0" />
-      <point x="1029.3258037791877" y="1629.0" />
-      <point x="75.5" y="149.0" />
+    <edge source="desertIsland.location.Location" target="desertIsland.inventory.Inventory" relationship="TO_ONE">
+      <point x="37.75" y="-149.0" />
+      <point x="766.962434189848" y="207.0" />
+      <point x="890.712434189848" y="207.0" />
+      <point x="890.712434189848" y="197.0" />
+      <point x="942.6458333333333" y="197.0" />
+      <point x="-83.625" y="83.0" />
     </edge>
-    <edge source="desertIsland.location.LocationTest" target="desertIsland.location.Direction" relationship="DEPENDENCY">
-      <point x="-64.0" y="-149.0" />
-      <point x="111.5" y="1669.0" />
-      <point x="139.71145833333003" y="1669.0" />
-      <point x="139.71145833333003" y="496.0" />
-      <point x="579.2633037791877" y="496.0" />
-      <point x="579.2633037791877" y="466.0" />
-      <point x="547.3148212208089" y="466.0" />
+    <edge source="desertIsland.location.Location" target="desertIsland.location.Direction" relationship="DEPENDENCY">
+      <point x="-113.25" y="-149.0" />
+      <point x="615.962434189848" y="217.0" />
+      <point x="499.86572764419316" y="217.0" />
+      <point x="499.86572764419316" y="207.0" />
+      <point x="511.49072764419316" y="207.0" />
       <point x="-50.25" y="83.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="330.5" y="521.0" />
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="207.5" y="205.0" />
   <SelectedNodes />
   <Categories>
     <Category>Fields</Category>
