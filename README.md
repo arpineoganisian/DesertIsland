@@ -4,7 +4,7 @@ ____
 
 Long-awaited journey on a cruise liner ends in disaster. Your ship is wrecked in a storm.    
 You find yourself on a beautiful desert island with no one else around.    
-There is one way to get back home.
+There is only one way to get back home.
 
 :arrow_right:  **HOW TO PLAY**   
 
