@@ -21,4 +21,6 @@ Start the console game and use following commands:
 - commands --> to list all available commands
 - exit --> to exit the game
 
-[![UML diagram of the project](https://github.com/buhankahleba/DesertIsland/blob/master/DesertIsland-UML.png)]
+:arrow_right: **UML DIAGRAM OF THE PROJECT**
+
+![UML diagram of the project](https://github.com/buhankahleba/DesertIsland/blob/master/DesertIsland-UML.png)
