@@ -29,23 +29,24 @@ public class Main {
                 -5, "Tastes disgusting!");
         Item item6 = new UsableItem("Lime", "Ripe and sore... Should I eat it?", Moveable.MOBILE,
                 -5, "Now I'm even more thirsty!");
-        Item item7 = new Item("Leaf", "Banana leaf looks like something that I can use for constructing a hut. As a roof. But I need foundation though.", Moveable.MOBILE);
-        Item item8 = new UsableItem("Source of freshwater", "Thank God! I will not die of thirst", Moveable.STATIONARY,
-                5, "Water is life");
+        Item item7 = new Item("Leaf", "Banana leaf looks like something that I can use for " +
+                "constructing a hut. As a roof. But I need foundation though.", Moveable.MOBILE);
+        Item item8 = new UsableItem("Source of freshwater", "Thank God! I will not die of thirst",
+                Moveable.STATIONARY, 5, "Water is life");
         Item item9 = new Item("Stone", "This can be useful", Moveable.MOBILE);
-        Item item10 = new UsableItem("Fish", "A shoal of fish. But I can't catch one with my bare hands", Moveable.STATIONARY,
-                -10, "Ouch! I got bit");
+        Item item10 = new UsableItem("Fish", "A shoal of fish. But I can't catch one with my bare hands",
+                Moveable.STATIONARY, -10, "Ouch! I got bit");
         Item item11 = new Item("Stick", "Those can be useful", Moveable.MOBILE);
 
         // инициализация предметов-результатов комбо
-        Item item12 = new UsableItem("Coconut meat", "Calories: 283, protein: 3 grams, carbs: 10 grams, Fat: 27 grams.", Moveable.MOBILE,
-                10, "Really quite filling");
+        Item item12 = new UsableItem("Coconut meat", "Calories: 283, protein: 3 grams, carbs: 10 grams," +
+                " Fat: 27 grams.", Moveable.MOBILE, 10, "Really quite filling");
         Item item13 = new UsableItem("Mojito virgin", "Let's grab a drink!", Moveable.MOBILE,
                 -5, "Rum is missing, I don't like it");
         Item item14 = new UsableItem("Hut", "Finally, I'll get some sleep.", Moveable.STATIONARY,
                 -20, "The hut was poorly constructed and collapsed in the middle of my dream");
-        Item item15 = new UsableItem("Sushi", "I don't know if it's a good idea to eat raw fish, but I'm so hungry!", Moveable.MOBILE,
-                10, "Really quite filling");
+        Item item15 = new UsableItem("Sushi", "I don't know if it's a good idea to eat raw fish," +
+                " but I'm so hungry!", Moveable.MOBILE, 10, "Really quite filling");
 
         // инициализация комбо для
         Combo combo1 = new Combo(item3, item9, item12);
@@ -107,14 +108,15 @@ public class Main {
 
         while (true) {
             System.out.print(" --> ");
-            String message = reader.readLine().toLowerCase().replaceAll("^\\s+", "").replaceAll("\\s+$", "");
+            String message = reader.readLine().toLowerCase().
+                    replaceAll("^\\s+", "").replaceAll("\\s+$", "");
             if(message.length() >= 11 && message.compareTo("look around") == 0) {
                 player.lookAround();
             }
             else if(message.length() >= 2 && message.substring(0, 2).compareTo("go") == 0) {
                 player.go(message.substring(2).replaceAll("^\\s+", ""));
             }
-            else if(message.length() >= 9 && message.substring(0, 9).compareTo("desertIsland/inventory") == 0) {
+            else if(message.length() >= 9 && message.substring(0, 9).compareTo("inventory") == 0) {
                 System.out.println("~ You've got:");
                 player.getInventory().show();
             }

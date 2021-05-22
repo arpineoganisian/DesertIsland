@@ -38,6 +38,9 @@ public class Player {
     }
 
     public void go(String string) {
+        if (Optional.ofNullable(string).isEmpty()) {
+            return;
+        }
         // парс заданного направления в команде
         Direction temp = null;
         if (string.compareTo("west") == 0)
@@ -134,6 +137,7 @@ public class Player {
             }
         }
     }
+
     public void makeCombo (List<Combo> comboList, String string) {
         String[] word = string.split("\\s+");
         if (word.length != 2) {
