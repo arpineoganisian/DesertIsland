@@ -1,10 +1,12 @@
 Text-based adventure game written in Java
 
-**BACKSTORY**
+:arrow_right: **BACKSTORY**    
 
-Long-awaited journey on a cruise liner ends in disaster. Your ship is wrecked in a storm and you found yourself on a beautiful desert island with no one else around. You have only one way to get back home.
+Long-awaited journey on a cruise liner ends in disaster. Your ship is wrecked in a storm.    
+You found yourself on a beautiful desert island with no one else around.    
+There is one way to get back home.
 
-**HOW TO PLAY**
+:arrow_right: **HOW TO PLAY**   
 
 You can use following commands:
 - look around --> to get info about you current location
