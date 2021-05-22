@@ -1,4 +1,4 @@
-####Text-based adventure game written in Java
+#### Text-based adventure game written in Java
 ____
 :arrow_right:  **BACKSTORY**    
 
